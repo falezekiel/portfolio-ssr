@@ -1,0 +1,33 @@
+.carousel-img{
+    padding: 1rem;
+    margin-top: 2rem;
+    }
+    .seccion{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .pres-img{
+        width: 100%;
+    }
+    .subtitle{
+        text-align: center;
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: white !important;
+    }
+    .accordion-button:focus {
+        border-color: #8a2530 !important;
+        box-shadow: none;
+    }
+    #trabajos-mobile{
+        display: none;
+    }
+    
+    @media screen and (max-width: 767px) {
+        #trabajos-mobile{
+            display: block;
+        }
+        #trabajos{
+            display: none
+        }
+    }

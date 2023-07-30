@@ -1,0 +1,29 @@
+<div class="row header-top">
+    <div class="col-6">
+      <img class="logo-fasta" src="./assets/images/logo-oasis.png" alt="logo">
+    </div>
+    <div class="col-6">
+      <div class="navbar">
+        <ul class="menu">
+          <li><a href="#nosotros">NOSOTROS</a></li>
+          <li><a href="#carrusel">SERVICIOS</a></li>
+          <li><a href="#trabajos">TRABAJOS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="hamburger-menu" (click)="toggleMobileMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      
+        <ul class="mobile-menu" [ngClass]="{ 'active': isMobileMenuOpen }">
+          <!-- Contenido del menú móvil -->
+          <li><a href="#nosotros" (click)="closeMobileMenu()">NOSOTROS</a></li>
+          <li><a href="#carrusel" (click)="closeMobileMenu()">SERVICIOS</a></li>
+          <li><a href="#trabajos" (click)="closeMobileMenu()">TRABAJOS</a></li>
+          <li><a href="#contacto" (click)="closeMobileMenu()">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

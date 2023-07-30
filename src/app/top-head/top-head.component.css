@@ -1,0 +1,81 @@
+.header-top {
+    width: 100%;
+    background: #879184;
+    height: 5rem;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  .logo-fasta {
+    width: 12rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-top: 0;
+  }
+  
+  .navbar ul.menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color: white;
+    list-style-type: none;
+  }
+  
+  li {
+    margin: 1rem;
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .mobile-menu {
+    display: none; /* Oculta el menú móvil inicialmente */
+  }
+  
+  /* Media query para pantallas con ancho menor a 590px */
+  @media screen and (max-width: 700px) {
+    .navbar ul.menu {
+      display: none; /* Oculta el menú horizontal */
+    }
+    .hamburger-menu {
+      display: block; /* Muestra el menú hamburguesa */
+      cursor: pointer;
+      padding: 15px;
+      position: absolute;
+      right: 0;
+      top: 5px;
+    }
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+    .mobile-menu {
+      display: none; /* Oculta el menú móvil inicialmente */
+    }
+    .mobile-menu.active {
+      display: block; /* Muestra el menú móvil cuando está activo */
+      position: absolute;
+      top: 5rem;
+      right: 0;
+      background-color: #879184;
+      width: 100%;
+      padding: 1rem 0;
+    }
+    .mobile-menu li {
+      margin: 0;
+      padding: 0.5rem;
+    }
+    .mobile-menu li a {
+      color: white;
+    }
+    .close-menu {
+      text-align: right;
+      padding: 1rem;
+      cursor: pointer;
+    }
+  }
+  
