@@ -1,24 +1,28 @@
 .header-top {
     width: 100%;
-    background: #879184;
-    height: 5rem;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-repeat: no-repeat;
+    height: 8rem;
     margin-right: 0px;
     margin-left: 0px;
+    border-bottom: 1px solid #6C63Ff;
+    color: #6C63Ff;
   }
   
-  .logo-fasta {
-    width: 12rem;
+  .logo {
+    width: 9rem;
     padding: 0.5rem;
     padding-left: 2rem;
-    padding-top: 0;
+    padding-top: 1rem;
+    border-radius: 50%;
   }
   
   .navbar ul.menu {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    color: white;
     list-style-type: none;
+    padding-top: 2rem;
   }
   
   li {
@@ -28,7 +32,8 @@
   
   a {
     text-decoration: none;
-    color: white;
+    color: #6C63Ff;
+    font-weight: bolder;
   }
   .mobile-menu {
     display: none; /* Oculta el menú móvil inicialmente */
@@ -50,7 +55,7 @@
     .bar {
       width: 25px;
       height: 3px;
-      background-color: white;
+      background-color: #6C63Ff;
       margin: 5px 0;
     }
     .mobile-menu {

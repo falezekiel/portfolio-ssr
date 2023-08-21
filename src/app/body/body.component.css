@@ -11,6 +11,8 @@
     }
     .subtitle{
         text-align: center;
+        color: #6C63Ff;
+        font-weight: bolder;
     }
     .accordion-button:not(.collapsed) {
         background-color: white !important;
@@ -19,15 +21,49 @@
         border-color: #8a2530 !important;
         box-shadow: none;
     }
-    #trabajos-mobile{
-        display: none;
+   #servicios-mobile{
+    display: none;
+   }
+    .card{
+        margin: 1rem!important;
+        border: none!important;
+    }
+    .icono-hab{
+        height: 2rem;
+        width: 2rem;
+    }
+    .accordion-item{
+        background: transparent!important;
+        color: white!important;
+        border: none!important;
+    }
+    .accordion-button{
+        background: transparent!important;
+        color: white!important;
+        font-weight: bolder;
+        border-radius: 10px!important;
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: #6C63Ff !important;
+    }
+
+    .accordion-button::after{
+        display: none!important;
+    }
+
+    .centered-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
-    @media screen and (max-width: 767px) {
-        #trabajos-mobile{
+
+    @media (max-width: 767px) {
+        #servicios-mobile{
             display: block;
-        }
-        #trabajos{
-            display: none
-        }
+           }
+           #servicios{
+            display: none;
+           }
+      
     }
